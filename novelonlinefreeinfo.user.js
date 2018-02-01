@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         NOvelonlinefrEeinFoSimpLifierfiXer
-// @namespace    http://tampermonkey.net/
+// @namespace    tools
 // @version      0.9
 // @description  try to take over the world!
 // @author       IMAK
