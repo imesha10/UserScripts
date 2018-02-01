@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         NOvelonlinefreebeauty
+// @name         NOvelonlinefrEeinFoSimpLifierfiXer
 // @namespace    http://tampermonkey.net/
 // @version      0.9
 // @description  try to take over the world!
