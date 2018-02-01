@@ -5,7 +5,7 @@
 // @description  try to take over the world!
 // @author       IMAK
 // @match        http://novelonlinefree.info/*
-// @updateURL    
+// @updateURL    https://github.com/imesha10/TamperMonkeyScripts/blob/master/novelonlinefreeinfo.user.js
 // @grant        none
 // ==/UserScript==
 
