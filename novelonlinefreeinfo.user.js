@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NOvelonlinefrEeinFoSimpLifierfiXer
 // @namespace    tools
-// @version      0.961
+// @version      0.962
 // @description  try to take over the world!
 // @author       IMAK
 // @match        http://novelonlinefree.info/*
@@ -23,7 +23,9 @@ $(document).ready(function(){
     $(".custom_content").remove();
     $(".cmt_doc").remove();
     $(".menu_doc").css('backgroundColor',col);
-    $(".name_chapter entry-title").css('backgroundColor',col);
+    $(".name_chapter entry-title").forEach(function(){
+        this.css('backgroundColor',col);
+    });
     $(".breadcrumbs").remove();
 
     var childNodes0 = $('#vung_doc')[0].childNodes;
