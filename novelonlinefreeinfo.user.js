@@ -23,7 +23,7 @@ $(document).ready(function(){
     $(".custom_content").remove();
     $(".cmt_doc").remove();
     $(".menu_doc").css('backgroundColor',col);
-    $(".name_chapter entry-title").forEach(function(){
+    [].forEach(childNodes, function(){
         this.css('backgroundColor',col);
     });
     $(".breadcrumbs").remove();
