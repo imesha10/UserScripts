@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NOvelonlinefrEeinFoSimpLifierfiXer
 // @namespace    tools
-// @version      0.970
+// @version      0.971
 // @description  try to take over the world!
 // @author       IMAK
 // @match        http://novelonlinefree.info/*
@@ -18,6 +18,7 @@ $(document).ready(function(){
 
     // Main css removal and modifier
     var col = "rgb(0,0,0)"; 
+    $('#header').remove();
     $(".top_header").remove();
     $(".lem_bem").remove();
     $(".lem_bem_top").remove();
