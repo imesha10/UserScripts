@@ -46,11 +46,17 @@ $(document).ready(function(){
         return ((counter>3)?true:false);
     }
 
+    function check2(x){
+        var childNodes0 = $('#vung_doc')[0].childNodes;
+        if (childNOdes.length<x+2 && childNodes0[x].nodeType == childNodes0[x+1].nodeType) return false;
+        else return true;
+    }
+
     if (flag_00 && check1()){
         var childNodes0 = $('#vung_doc')[0].childNodes;
         for (var i = 0; i < childNodes0.length; i++){
             var node = childNodes0[i];
-            if (node.nodeType != 3 && i%2==1){node.remove(); i-=1;}
+            if (node.nodeType != 3 && i%2==1 && check2(i)){node.remove(); i-=1;}
         }
     }
 
