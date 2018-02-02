@@ -54,6 +54,10 @@ $(document).ready(function(){
         for (var i = 0; i < childNodes0.length; i++){
             var node = childNodes0[i];
             if (node.nodeName == "P" && i%2==1 && i!=1){node.remove(); i-=1;}
+            if (none.nodeName == "SPAN") {
+                node.style.fontSize = 19;
+                node.style.color = '#cacbcd';
+            }
         }
     }
 
