@@ -56,21 +56,21 @@ $(document).ready(function(){
     }
 
     if (flag_00 && check1()){
-        for (var i = 0; i < childNodes0.length; i++){
-            var node = childNodes0[i];
+        for (var x = 0; x < childNodes0.length; x++){
+            var node = childNodes0[x];
             if (node.nodeType != 3 && i%2==1 && check2(i)){node.remove(); i-=1;}
         }
     }
 
     if (flag_01){
-        for (var i = 0; i < childNodes0.length; i++){
-            console.log(childNodes0[i].nodeType);
+        for (var x = 0; x < childNodes0.length; x++){
+            console.log(childNodes0[x].nodeType);
         }
     }
 
     if (flag_02){
-        for (var i = 0; i < childNodes0.length; i++){
-            console.log(childNodes0[i].nodeValue);
+        for (var x = 0; x < childNodes0.length; x++){
+            console.log(childNodes0[x].nodeValue);
         }
     }
 });
