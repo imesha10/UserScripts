@@ -61,7 +61,7 @@ $(document).ready(function(){
         for (var i = 0; i < childNodes0.length; i++){
             var node = childNodes0[i];
             if (node.nodeType == 1 && node.nodeName == "SPAN") {
-                node.setAttribute("style", "font-size:19; color: #cacbcd");
+                node.setAttribute("style", "font-size:19; color: #ff00e9");
             }
         }
     }
