@@ -15,15 +15,15 @@ var flag_02 = false; // debug: shows the node value
 $(document).ready(function(){
 
     'use strict';
-    var col = "rgb(0,0,0)";
-    $(".top_header").remove();
-    $(".lem_bem").remove();
-    $(".lem_bem_top").remove();
-    $(".wrap-menu").remove();
-    $(".custom_content").remove();
-    $(".cmt_doc").remove();
-    $(".menu_doc").css('backgroundColor',col);
-    $(".name_chapter entry-title").forEach(function(){
+    var col = "rgb(0,0,0)"; 
+    $(".top_header")[0].remove();
+    $(".lem_bem")[0].remove();
+    $(".lem_bem_top")[0].remove();
+    $(".wrap-menu")[0].remove();
+    $(".custom_content")[0].remove();
+    $(".cmt_doc")[0].remove();
+    $(".menu_doc")[0].css('backgroundColor',col);
+    $(".name_chapter entry-title")[0].forEach(function(){
         this.css('backgroundColor',col);
     });
     $(".breadcrumbs").remove();
