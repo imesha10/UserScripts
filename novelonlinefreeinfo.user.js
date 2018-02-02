@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NOvelonlinefrEeinFoSimpLifierfiXer
 // @namespace    tools
-// @version      0.967
+// @version      0.970
 // @description  try to take over the world!
 // @author       IMAK
 // @match        http://novelonlinefree.info/*
@@ -15,6 +15,8 @@ var flag_02 = false; // debug: shows the node value
 $(document).ready(function(){
 
     'use strict';
+
+    // Main css removal and modifier
     var col = "rgb(0,0,0)"; 
     $(".top_header").remove();
     $(".lem_bem").remove();
@@ -30,6 +32,8 @@ $(document).ready(function(){
     $('.new_update_trangdoc').remove();
     $('#footer').remove();
 
+
+    // Line fixer stuff
     var childNodes0 = $('#vung_doc')[0].childNodes;
     function check1(){
         var previousNodeType = 0;
