@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NOvelonlinefrEeinFoSimpLifierfiXer
 // @namespace    tools
-// @version      0.990
+// @version      0.991
 // @description  try to take over the world!
 // @author       IMAK
 // @match        http://novelonlinefree.info/*
