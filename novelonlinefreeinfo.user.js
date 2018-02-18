@@ -4,7 +4,7 @@
 // @version      0.993
 // @description  try to take over the world!
 // @author       IMAK
-// @match        http://novelonlinefree.info/chapter/*
+// @match        http://novelonlinefree.info/chapter/* 
 // @updateURL    https://github.com/imesha10/TamperMonkeyScripts/blob/master/novelonlinefreeinfo.user.js
 // @grant        none
 // ==/UserScript==
@@ -32,6 +32,7 @@ $(document).ready(function(){
     $('.lam_nham_chapter').remove();
     $('.new_update_trangdoc').remove();
     $('#footer').remove();
+    $('#vung_doc').css('backgroundColor',"#262626");
 
 
     // Line fixer stuff
