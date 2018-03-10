@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NOvelonlinefrEeinFoSimpLifierfiXer
 // @namespace    tools
-// @version      0.996
+// @version      0.998
 // @description  try to take over the world!
 // @author       IMAK
 // @match        http://novelonlinefree.info/chapter/* 
@@ -9,7 +9,15 @@
 // @grant        none
 // ==/UserScript==
 
-var flag_00 = true; // Makes the lines have only one space from each other.
+
+ // Later i realized I should taken all the nodes and measured their length then deleted all the ones with 0
+ // After I should have just added one blank p 
+ // But it seems that they fixed that so ya............
+ // All the flags are set false which makes non of the line modifier run
+ // I really want to change this code to make it better but I can't find a test subject for this and
+ // there is a significan bug where some actual lines with words gets deleted (lol)
+
+var flag_00 = false; // Makes the lines have only one space from each other.
 var flag_01 = false; // debug: shows the node types on screen
 var flag_02 = false; // debug: shows the node value
 $(document).ready(function(){
@@ -36,6 +44,8 @@ $(document).ready(function(){
     $('#vung_doc').css('backgroundColor',"#262626");    
 
 
+
+   
     // Line fixer stuff
     var childNodes0 = $('#vung_doc')[0].childNodes;
     function check1(){
