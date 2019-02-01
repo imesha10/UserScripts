@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         NOvelonlinefrEeinFoSimpLifierfiXer
 // @namespace    tools
-// @version      0.999
+// @version      1.001
 // @description  try to take over the world!
 // @author       IMAK
 // @match        http://novelonlinefree.info/chapter/* 
 // @match        http://lightnovelgate.com/chapter/*
+// @match        https://novelonlinefree.info/chapter/*
+// @match        https://novelonlinefull.com/chapter/*
 // @updateURL    https://github.com/imesha10/TamperMonkeyScripts/blob/master/novelonlinefreeinfo.user.js
 // @grant        none
 // ==/UserScript==
