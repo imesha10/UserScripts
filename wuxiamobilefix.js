@@ -5,7 +5,7 @@
 // @description  try to take over the world!
 // @author       You
 // @match        https://m.wuxiaworld.co/*
-// @grant        none
+// @grawdnt        none
 // ==/UserScript==
 
 $(document).ready(function(){
