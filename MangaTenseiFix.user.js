@@ -4,6 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
+// @updateURL    https://github.com/imesha10/TamperMonkeyScripts/blob/master/MangaTenseiFix.user.js
 // @match        https://mangatensei.com/chapter/*
 // @grant        none
 // ==/UserScript==
