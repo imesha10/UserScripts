@@ -3,9 +3,9 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://poe.com/*
 // @grant       none
-// @version     1.4
+// @version     1.5
 // @author      -
-// @description 4/26/2023, 9:03:03 AM
+// @description Downloads the logs of poe chatlogs.
 // @updateURL   https://raw.githubusercontent.com/imesha10/UserScripts/master/poelogdownloader.js
 // @require     https://code.jquery.com/jquery-3.6.0.min.js
 // @grant       GM_addStyle
@@ -13,6 +13,8 @@
 // @icon        https://poe.com/favicon.ico    
 // ==/UserScript==
  
+// One of ther requires was manually moved here to upload to greasy forks.
+
 function waitForKeyElements (
     selectorTxt,    /* Required: The jQuery selector string that
                         specifies the desired element(s).
