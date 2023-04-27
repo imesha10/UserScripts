@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://poe.com/*
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      -
 // @description 4/26/2023, 9:03:03 AM
 // @updateURL   https://raw.githubusercontent.com/imesha10/UserScripts/master/poelogdownloader.js
