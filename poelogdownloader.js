@@ -3,8 +3,9 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://poe.com/*
 // @grant       none
-// @version     1.0
+// @version     1.2
 // @author      -
+// @updateURL   https://raw.githubusercontent.com/imesha10/UserScripts/master/poelogdownloader.js
 // @description 4/26/2023, 9:03:03 AM
 // @require     https://gist.github.com/raw/2625891/waitForKeyElements.js
 // @require     https://code.jquery.com/jquery-3.6.0.min.js
