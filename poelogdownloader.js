@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://poe.com/*
 // @grant       none
-// @version     1.5
+// @version     1.6
 // @author      -
 // @description Downloads the logs of poe chatlogs.
 // @updateURL   https://raw.githubusercontent.com/imesha10/UserScripts/master/poelogdownloader.js
@@ -133,11 +133,11 @@ function actionFunction (jNode) {
         var outputs1 = childElementsPairs.eq(i).children().last().css("background");
         // user
         if (outputs1 === "rgb(59, 58, 190) none repeat scroll 0% 0% / auto padding-box border-box"){
-          chatLog += "USER:\n" + childElementsPairs.eq(i).children().text() + "\n\n";
+          chatLog += "# USER:\n" + childElementsPairs.eq(i).children().text() + "\n\n";
         }
         // ai
         else if (outputs1 == "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"){
-          chatLog += "\n\AI:\n" + childElementsPairs.eq(i).children().text() + "\n\n";
+          chatLog += "\n\# AI:\n" + childElementsPairs.eq(i).children().text() + "\n\n";
         }
       }
  
