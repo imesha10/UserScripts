@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://poe.com/*
 // @grant       none
-// @version     1.6
+// @version     1.7
 // @author      -
 // @description Downloads the logs of poe chatlogs.
 // @updateURL   https://raw.githubusercontent.com/imesha10/UserScripts/master/poelogdownloader.js
@@ -142,20 +142,20 @@ function actionFunction (jNode) {
       }
  
       // Create a Blob object with the output and set its MIME type to "text/plain"
-      const blob = new Blob([chatLog], { type: "text/plain" });
+      const blob = new Blob([chatLog], { type: "text/markdown" });
  
       // Create the file save options object
       const options = {
-        types: [
-          {
-            description: "Text file",
-            accept: { "text/plain": [".txt"] },
-          },
-        ],
+       types: [
+         {
+           description: "Markdown file",
+           accept: { "text/markdown": [".md"] },
+         },
+       ],
       };
  
       // Use the stored file name or a default file name if none is stored
-      const defaultName = localStorage.getItem("fileName") || "output.txt";
+      const defaultName = localStorage.getItem("fileName") || "output.md";
  
       // Use showSaveFilePicker to prompt the user for the file location and name
       options.suggestedName = defaultName;
