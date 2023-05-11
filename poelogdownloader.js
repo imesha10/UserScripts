@@ -3,13 +3,13 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://poe.com/*
 // @grant       none
-// @version     1.8
+// @version     1.9
 // @author      -
 // @description Downloads the logs of poe chatlogs.
 // @updateURL   https://raw.githubusercontent.com/imesha10/UserScripts/master/poelogdownloader.js
 // @require     https://code.jquery.com/jquery-3.6.0.min.js
+// @iconURL        https://poe.com/favicon.ico
 // @license     MIT
-// @icon        https://poe.com/favicon.ico
 // ==/UserScript==
 
 function addButton() {
