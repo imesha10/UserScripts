@@ -6,7 +6,7 @@
 // @author       You
 // @match        https://www.youtube.com/watch*
 // @grant        GM_setClipboard
-// @updateURL    https://raw.githubusercontent.com/imesha10/UserScripts/main/YouTubeTranscriptCopier.user.js
+// @updateURL    https://github.com/imesha10/UserScripts/raw/master/YouTubeTranscriptCopier.user.js
 // ==/UserScript==
 
 (function() {
