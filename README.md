@@ -8,4 +8,6 @@ Here's a brief description of what each script does:
 
 - **PoeLogDownloader**: This script enables you to download Path of Exile (PoE) chat logs. Please note that you need to manually scroll back through the chat history to load all the messages prior to initiating the download.
 
+- **YouTubeTranscriptCopier**: This script adds a "Copy Transcript" button to YouTube video pages, allowing users to easily copy the transcript of a video, including timestamps, with a single click. It works seamlessly with Google Chrome and requires Tampermonkey or Violentmonkey for script management.
+
 In the words of an ancient philosopher, "Nothingness is the only true eternal goal".
