@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Transcript Copier
 // @namespace    http://tampermonkey.net/
-// @version      1.0.4
+// @version      1.0.5
 // @description  Copy YouTube video transcripts with timestamps
 // @author       You
 // @match        https://www.youtube.com/watch*
@@ -50,15 +50,8 @@
         
             // Wait for the transcript to be visible
             const checkTranscriptVisible = setInterval(function() {
-                // Select all engagement panels
-                const engagementPanels = document.querySelectorAll('ytd-engagement-panel-section-list-renderer');
-                
-                // Filter for the panel that contains the transcript
-                const transcriptPanel = Array.from(engagementPanels).find(panel => {
-                    // Assuming the transcript panel contains a specific word or phrase that we can search for
-                    // For example, "Transcript" or any other consistent text within the panel
-                    return panel.innerText.includes('Transcript'); 
-                });
+                // Select the transcript panel using the 'target-id' attribute
+                const transcriptPanel = document.querySelector('ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-searchable-transcript"]');
         
                 if (transcriptPanel && transcriptPanel.innerText.trim() !== '') {
                     clearInterval(checkTranscriptVisible);
@@ -74,7 +67,7 @@
                     console.log('Waiting for transcript panel to load...'); // Log the waiting for the transcript panel to load
                 }
             }, 500);
-        });        
+        }); 
     }
 
     // Insert the Copy Transcript button when the page is loaded and ready
