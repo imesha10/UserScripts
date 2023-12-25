@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Transcript Copier
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.4
 // @description  Copy YouTube video transcripts with timestamps
 // @author       You
 // @match        https://www.youtube.com/watch*
@@ -43,31 +43,38 @@
         // Add click event listener to the Copy Transcript button
         copyButton.addEventListener('click', function() {
             console.log('Copy Transcript button clicked.'); // Log the button click event
-
+        
             // Click the "Show transcript" button to ensure transcript is visible
             showTranscriptButton.click();
             console.log('Show transcript button clicked programmatically.'); // Log the simulated click on the Show transcript button
-
+        
             // Wait for the transcript to be visible
-            const transcriptPanelSelector = '#panels > ytd-engagement-panel-section-list-renderer:nth-child(5)';
             const checkTranscriptVisible = setInterval(function() {
-                const transcriptPanel = document.querySelector(transcriptPanelSelector);
-
+                // Select all engagement panels
+                const engagementPanels = document.querySelectorAll('ytd-engagement-panel-section-list-renderer');
+                
+                // Filter for the panel that contains the transcript
+                const transcriptPanel = Array.from(engagementPanels).find(panel => {
+                    // Assuming the transcript panel contains a specific word or phrase that we can search for
+                    // For example, "Transcript" or any other consistent text within the panel
+                    return panel.innerText.includes('Transcript'); 
+                });
+        
                 if (transcriptPanel && transcriptPanel.innerText.trim() !== '') {
                     clearInterval(checkTranscriptVisible);
                     console.log('Transcript panel found and loaded:', transcriptPanel); // Log the visibility and loading of the transcript panel
-
+        
                     // Copy the transcript text to clipboard
                     GM_setClipboard(transcriptPanel.innerText, 'text');
                     console.log('Transcript copied to clipboard.'); // Log the copying of the transcript to the clipboard
-
+        
                     // Show notification
                     alert('Transcript copied to clipboard!');
                 } else {
                     console.log('Waiting for transcript panel to load...'); // Log the waiting for the transcript panel to load
                 }
             }, 500);
-        });
+        });        
     }
 
     // Insert the Copy Transcript button when the page is loaded and ready
